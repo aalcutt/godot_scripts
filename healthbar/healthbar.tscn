@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/horizontal_bar_green.png" type="Texture" id=1]
+[ext_resource path="res://scenes/healthbar.gd" type="Script" id=2]
+
+[node name="healthbar" type="TextureProgress"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_right = 65.0
+margin_bottom = 10.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 1 )
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+script = ExtResource( 2 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+
